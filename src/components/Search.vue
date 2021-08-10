@@ -38,12 +38,14 @@ export default {
   border: 2px solid var(--searchBorderColor);
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
+  padding: 0 25px 0 13px;
+  margin: 20px 0;
 }
 
 .searchInput svg {
   position: absolute;
   right: 7px;
-  top: 10px;
+  top: 30px;
   color: #cecbcb;
   font-size: 15px;
 }
