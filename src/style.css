@@ -1,0 +1,22 @@
+html {
+    background: #b5acac;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --searchBorderColor: #6d6c6c;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    outline: none;
+}
