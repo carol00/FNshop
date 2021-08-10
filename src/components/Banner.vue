@@ -18,7 +18,7 @@ export default {
 
 .banner {
     width: 100%;
-    margin: 40px 0;
+    margin: 70px 0;
 }
 
 .picArea {
