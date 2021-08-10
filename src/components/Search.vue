@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped>
-  @import '../style.css';
+@import '../style.css';
 
 .search {
   width: 100%;
@@ -29,6 +29,7 @@ export default {
 .searchInput {
   position: relative;
   flex: 0 60%;
+  max-width: 350px;
 }
 
 .searchInput input {
