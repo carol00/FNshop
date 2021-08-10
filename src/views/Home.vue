@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Search/>
+    <Header/>
     <Banner/>
     <div class="line"></div>
     <Product/>
@@ -8,16 +8,16 @@
 </template>
 
 <script>
-import Search from '@/components/Search.vue';
 import Banner from '@/components/Banner.vue';
 import Product from '@/components/Product.vue';
+import Header from '@/components/Header.vue';
 
 export default {
   name: 'Home',
   components: {
-    Search,
     Banner,
-    Product
+    Product,
+    Header
   }
 }
 </script>

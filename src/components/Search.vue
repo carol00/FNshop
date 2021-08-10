@@ -2,7 +2,7 @@
   <div class="search center">
     <div class="searchInput">
       <input type="search" placeholder="search">
-      <i class="fas fa-times-circle"></i>
+      <!-- <i class="fas fa-times-circle"></i> -->
     </div>
     <div class="searchBtn center">
       <button><i class="fas fa-search"></i></button>
@@ -22,7 +22,7 @@ export default {
 
 .search {
   width: 100%;
-  margin: 10px 5px;
+  margin: 0 5px;
 }
 
 /* input */
@@ -38,17 +38,16 @@ export default {
   border: 2px solid var(--searchBorderColor);
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
-  padding: 0 25px 0 13px;
-  margin: 20px 0;
+  padding: 0 8px 0 13px;
 }
 
-.searchInput svg {
+/* .searchInput svg {
   position: absolute;
   right: 7px;
   top: 30px;
   color: #cecbcb;
   font-size: 15px;
-}
+} */
 
 /* btn */
 .searchBtn button {
