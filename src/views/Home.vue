@@ -5,14 +5,17 @@
     <Banner/>
     <div class="line"></div>
     <Content/>
+    <Footer/>
   </div>
 </template>
 
 <script>
+import Nav from '@/components/Nav.vue';
+import Header from '@/components/Header.vue';
 import Banner from '@/components/Banner.vue';
 import Content from '@/components/Content.vue';
-import Header from '@/components/Header.vue';
-import Nav from '@/components/Nav.vue';
+import Footer from '@/components/Footer.vue';
+
 
 export default {
   name: 'Home',
@@ -20,10 +23,14 @@ export default {
     Header,
     Banner,
     Content,
-    Nav
+    Nav,
+    Footer
   }
 }
 </script>
 
 <style scoped>
+.home {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 </style>

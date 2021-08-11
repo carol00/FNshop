@@ -29,4 +29,7 @@ input {
   margin: auto;
 }
 
-  
+.nav, .footer {
+  background: #f3f0f0;
+}
+ 
