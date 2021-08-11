@@ -2,13 +2,13 @@
   <div class="banner">
       <div class="picContent">
         <img src="../assets/banner1.jpg">
-        <img src="../assets/banner2.jpg">
-        <img src="../assets/banner3.jpg">
+        <!-- <img src="../assets/banner2.jpg">
+        <img src="../assets/banner3.jpg"> -->
       </div>
-      <div class="switch">
+      <!-- <div class="switch">
         <button><i class="fas fa-angle-left"></i></button>
         <button><i class="fas fa-angle-right"></i></button>
-      </div>
+      </div> -->
   </div>
 </template>
 

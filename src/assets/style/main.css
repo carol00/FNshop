@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+  background: #FFF;
+}
+
+:root {
+  --searchBorderColor: #6d6c6c;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+input {
+  outline: none;
+}
+
+.line {
+  border-top: 1px #b7b7b742 solid;
+  width: 80%;
+  margin: auto;
+}
+
+  
