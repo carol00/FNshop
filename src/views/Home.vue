@@ -3,21 +3,21 @@
     <Header/>
     <Banner/>
     <div class="line"></div>
-    <Product/>
+    <Content/>
   </div>
 </template>
 
 <script>
 import Banner from '@/components/Banner.vue';
-import Product from '@/components/Product.vue';
+import Content from '@/components/Content.vue';
 import Header from '@/components/Header.vue';
 
 export default {
   name: 'Home',
   components: {
+    Header,
     Banner,
-    Product,
-    Header
+    Content
   }
 }
 </script>

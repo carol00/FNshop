@@ -1,23 +1,76 @@
 <template>
   <div class="product">
-    <PopularProduct/>
+    <div class="pic">
+        <img src="../assets/FN1.jpg">
+    </div>
+    <div class="name">{{ itemName }}</div>
+    <div class="priceBox">
+      <div class="price">
+        <p>$</p>
+        <span>{{ price }}</span>
+      </div>
+      <div class="discount">
+        <p>$</p>
+        <span>{{ discount }}</span>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import PopularProduct from '@/components/PopularProduct.vue';
-
 export default {
   name: 'Product',
-  components: {
-    PopularProduct
+  props: {
+    itemName: {
+      type: String,
+      required: true
+    },
+    price: {
+      type: Number,
+      required: true
+    },
+    discount: {
+      type: Number,
+      required: false
+    }
   }
 }
 </script>
 
 <style scoped>
 .product {
-  width: 80%;
-  margin: auto;
+  width: 170px;
+  height: 170px;
+  margin-left: 10px;
+}
+
+.pic img {
+  width: 100%;
+}
+
+.name {
+  text-align: left;
+  font-size: 15px;
+}
+
+/* price */
+
+.priceBox, .priceBox > div {
+  display: flex;
+  align-items: center;
+}
+
+
+.price {
+  text-decoration: line-through;
+  font-size: 15px;
+  color: #848181;
+}
+
+.discount {
+  font-size: 18px;
+  color: #cc6464;
+  font-weight: 700;
+  margin-left: 10px;
 }
 </style>
