@@ -1,7 +1,7 @@
 <template>
   <div class="productList">
       <p class="title">{{ title }}</p>
-      <div class="content">
+      <div class="prdContent">
         <div v-for="value in item" :key="value">
           <Product :itemName="value.itemName" :price="value.price" :discount="value.discount"/>
         </div>
@@ -44,12 +44,15 @@ export default {
   color: #000;
 }
 
-.productList .content {
-  display: flex;
+.prdContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
 }
 
-.productList .content > div {
-  flex: 1;
+.prdContent > div {
+  margin: auto;
 }
 
 .title {
@@ -57,5 +60,29 @@ export default {
   font-size: 18px;
   color: #82787b;
   font-weight: 600;
+}
+
+@media screen and (min-width: 600px) {
+  .prdContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .prdContent {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .prdContent {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .prdContent {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 </style>

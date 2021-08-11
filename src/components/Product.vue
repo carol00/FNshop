@@ -40,8 +40,7 @@ export default {
 <style scoped>
 .product {
   width: 170px;
-  height: 170px;
-  margin-left: 10px;
+  margin: 10px 10px 25px 10px;
 }
 
 .pic img {
