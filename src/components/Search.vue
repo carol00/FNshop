@@ -18,8 +18,6 @@ export default {
 </script>
 
 <style scoped>
-@import '../style.css';
-
 .search {
   width: 100%;
   margin: 0 5px;

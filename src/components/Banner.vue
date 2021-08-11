@@ -1,7 +1,13 @@
 <template>
   <div class="banner">
-      <div class="picArea">
+      <div class="picContent">
         <img src="../assets/banner1.jpg">
+        <img src="../assets/banner2.jpg">
+        <img src="../assets/banner3.jpg">
+      </div>
+      <div class="switch">
+        <button><i class="fas fa-angle-left"></i></button>
+        <button><i class="fas fa-angle-right"></i></button>
       </div>
   </div>
 </template>
@@ -14,14 +20,12 @@ export default {
 </script>
 
 <style scoped>
-@import '../style.css';
-
 .banner {
     width: 100%;
     margin: 70px 0;
 }
 
-.picArea {
+.picContent {
     width: 100%;
     margin: auto;
     max-width: 850px;
