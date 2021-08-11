@@ -25,7 +25,7 @@ export default {
   width: 100%;
   height: 35px;
   padding: 7px 17px;
-  background: #f3f0f0;
+  border-bottom: 1px #ece6e6 solid;
 }
 
 ul {
