@@ -1,30 +1,44 @@
 <template>
   <div class="home">
-    <Nav/>
-    <Header/>
-    <Banner/>
-    <div class="line"></div>
-    <Content/>
-    <Footer/>
+    <div v-if="loading">
+      <Loading/>
+    </div>
+    <div v-else>
+      <Nav/>
+      <Header/>
+      <Banner/>
+      <div class="line"></div>
+      <Content/>
+      <Footer/>
+    </div>
   </div>
 </template>
 
 <script>
+import Loading from '@/components/Loading.vue';
 import Nav from '@/components/Nav.vue';
 import Header from '@/components/Header.vue';
 import Banner from '@/components/Banner.vue';
 import Content from '@/components/Content.vue';
 import Footer from '@/components/Footer.vue';
 
-
 export default {
   name: 'Home',
   components: {
+    Loading,
     Header,
     Banner,
     Content,
     Nav,
     Footer
+  },
+  data() {
+    return {
+      loading: true
+    }
+  },
+  mounted() {
+    this.loading = false;
   }
 }
 </script>
