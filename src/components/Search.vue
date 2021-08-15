@@ -37,6 +37,8 @@ select {
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   height: 35px;
+  padding: 0 3px;
+  font-size: 14px;
 }
 
 /* input */
@@ -52,7 +54,9 @@ select {
   border: 2px solid var(--searchBorderColor);
   /* border-top-left-radius: 100px; */
   /* border-bottom-left-radius: 100px; */
-  padding: 0 8px 0 13px;
+  padding: 0 8px 0 10px;
+  border-inline-start-style: none;
+  border-inline-end-style: none;
 }
 
 .searchInput svg {
