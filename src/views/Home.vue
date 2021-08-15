@@ -8,7 +8,7 @@
       <Header/>
       <Banner/>
       <div class="line"></div>
-      <Content/>
+      <Content :prdList="getList"/>
       <Footer/>
     </div>
   </div>
@@ -37,8 +37,15 @@ export default {
       loading: true
     }
   },
+  computed: {
+    getList() {
+      return this.$store.state.list;
+    }
+  },
   mounted() {
+    this.$store.dispatch('GETLIST')
     this.loading = false;
+
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <ProductList :title="title"/>
+    <ProductList :title="title" :prdList="prdList"/>
   </div>
 </template>
 
@@ -15,6 +15,11 @@ export default {
   data() {
     return {
       title: '全部商品'
+    }
+  },
+  props: {
+    prdList: {
+      type: Array
     }
   }
 }
