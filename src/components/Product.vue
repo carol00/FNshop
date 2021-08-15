@@ -1,7 +1,7 @@
 <template>
   <div class="product">
     <div class="pic">
-        <img src="../assets/FN1.jpg">
+         <img :src="require('../assets/' + pic + '.jpg')">
     </div>
     <div class="name">{{ itemName }}</div>
     <div class="priceBox">
@@ -32,6 +32,10 @@ export default {
     discount: {
       type: Number,
       required: false
+    },
+    pic: {
+      type: String,
+      required: true
     }
   }
 }
