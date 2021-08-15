@@ -3,6 +3,7 @@
       <p class="title">{{ title }}</p>
       <div class="prdContent">
         <div v-for="item in list" :key="item">
+          <Product :itemName="item.itemName" :price="item.price" :discount="item.discount"/>
         </div>
       </div>
   </div>
