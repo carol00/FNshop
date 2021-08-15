@@ -2,8 +2,7 @@
   <div class="productList">
       <p class="title">{{ title }}</p>
       <div class="prdContent">
-        <div v-for="value in item" :key="value">
-          <Product :itemName="value.itemName" :price="value.price" :discount="value.discount"/>
+        <div v-for="item in list" :key="item">
         </div>
       </div>
   </div>
@@ -19,13 +18,13 @@ export default {
   },
   data() {
     return {
-      item: [
-        { itemName: '雙色蝴蝶結', price: 840, discount: 780 },
-        { itemName: '雙色蝴蝶結', price: 840, discount: 780 },
-        { itemName: '雙色蝴蝶結', price: 840, discount: 780 },
-        { itemName: '雙色蝴蝶結', price: 840, discount: 780 },
-        { itemName: '雙色蝴蝶結', price: 840, discount: 780 },
-        { itemName: '雙色蝴蝶結', price: 840, discount: 780 }
+      list: [
+        { itemName: '雙色蝴蝶結', price: 840, discount: 780, type: 'new' },
+        { itemName: '髮夾', price: 690, discount: 666, type: 'hot' },
+        { itemName: '彩帶', price: 320, discount: 203, type: '' },
+        { itemName: '書籤', price: 800, discount: 746, type: 'hot' },
+        { itemName: '票卡', price: 540, discount: 480, type: '' },
+        { itemName: '金色髮夾', price: 420, discount: 370, type: 'new' }
       ]
     }
   },
