@@ -1,9 +1,11 @@
 [
-  { "itemName": "雙色蝴蝶結", "price": 840, "discount": 780, "type": "new" },
-  { "itemName": "髮夾", "price": 690, "discount": 666, "type": "hot" },
-  { "itemName": "彩帶", "price": 320, "discount": 203, "type": "" },
-  { "itemName": "書籤", "price": 800, "discount": 746, "type": "hot" },
-  { "itemName": "票卡", "price": 540, "discount": 480, "type": "" },
-  { "itemName": "金色髮夾", "price": 420, "discount": 370, "type": "new" },
-  { "itemName": "carol test", "price": 890, "discount": 888, "type": "new" }
+  { "itemName": "雙色蝴蝶結", "price": 840, "discount": 780, "type": "new", "img": "FN1" },
+  { "itemName": "花葉", "price": 580, "discount": 520, "type": "hot", "img": "FN2" },
+  { "itemName": "潔白", "price": 320, "discount": 203, "type": "", "img": "FN3" },
+  { "itemName": "四葉草書籤", "price": 540, "discount": 500, "type": "hot", "img": "FN4" },
+  { "itemName": "玫瑰戒指", "price": 840, "discount": 800, "type": "", "img": "FN5" },
+  { "itemName": "漸層藍", "price": 420, "discount": 370, "type": "new", "img": "FN6" },
+  { "itemName": "藍色點綴", "price": 640, "discount": 600, "type": "new", "img": "FN7" },
+  { "itemName": "粉紅愛戀", "price": 640, "discount": 600, "type": "new", "img": "FN8" },
+  { "itemName": "金色髮夾", "price": 580, "discount": 540, "type": "new", "img": "FN9" }
 ]
