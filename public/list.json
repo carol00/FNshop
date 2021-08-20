@@ -7,5 +7,6 @@
   { "itemName": "漸層藍", "price": 420, "discount": 370, "type": "new", "img": "FN6" },
   { "itemName": "藍色點綴", "price": 640, "discount": 600, "type": "new", "img": "FN7" },
   { "itemName": "粉紅愛戀", "price": 640, "discount": 600, "type": "new", "img": "FN8" },
-  { "itemName": "金色髮夾", "price": 580, "discount": 540, "type": "new", "img": "FN9" }
+  { "itemName": "金色髮夾", "price": 580, "discount": 540, "type": "new", "img": "FN9" },
+  { "itemName": "金色髮夾", "price": 1180, "discount": 1100, "type": "new", "img": "FN10" }
 ]
