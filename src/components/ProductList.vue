@@ -1,6 +1,6 @@
 <template>
   <div class="productList">
-      <p class="title">{{ title }}</p>
+        <p class="title">{{ titleName }}</p>
       <div class="prdContent">
         <div v-for="item in prdList" :key="item">
           <Product :itemName="item.itemName" :price="item.price" :discount="item.discount"
@@ -22,9 +22,8 @@ export default {
     return {}
   },
   props: {
-    title: {
-      type: String,
-      required: true
+    titleName: {
+      type: String
     },
     prdList: {
       type: Array

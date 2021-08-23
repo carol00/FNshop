@@ -1,6 +1,8 @@
 <template>
-  <div class="content">
-    <ProductList :title="title" :prdList="prdList"/>
+  <div class="content" v-if="sortProduct()">
+    <ProductList if="this.newPrd.length" :prdList="newPrd" :titleName="'New Product'"/>
+    <ProductList if="this.hotPrd.length" :prdList="hotPrd" :titleName="'Hot Product'"/>
+    <ProductList if="this.prdList.length" :prdList="prdList" :titleName="'All Product'"/>
   </div>
 </template>
 
@@ -14,12 +16,23 @@ export default {
   },
   data() {
     return {
-      title: '全部商品'
+      newPrd: [],
+      hotPrd: []
     }
   },
   props: {
     prdList: {
       type: Array
+    }
+  },
+  methods: {
+    sortProduct() {
+      this.prdList.forEach((item) => {
+        const type = item.type;
+        if (type === 'new') this.newPrd.push(item);
+        if(type === 'hot') this.hotPrd.push(item);
+      });
+      return this.prdList
     }
   }
 }

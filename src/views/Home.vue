@@ -8,7 +8,7 @@
       <Header/>
       <Banner/>
       <div class="line"></div>
-      <Content :prdList="getList"/>
+      <Content :prdList="getList" />
       <Footer/>
     </div>
   </div>
