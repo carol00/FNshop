@@ -3,6 +3,10 @@ html {
   background: #FFF;
 }
 
+html, body {
+  height: 100%;
+}
+
 :root {
   --searchBorderColor: #6d6c6c;
 }
@@ -31,5 +35,18 @@ input {
 
 .nav, .footer {
   background: #f3f0f0;
+}
+
+.btn {
+  padding: 5px 10px;
+  background: #5285b3;
+  color: #FFF;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+input {
+  border: 1px solid #ced4da;
+  padding: 5px;
 }
  
