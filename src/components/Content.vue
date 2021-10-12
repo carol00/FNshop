@@ -38,9 +38,8 @@ export default {
 }
 </script>
 
-<style scoped>
-.content {
-  width: 80%;
-  margin: 15px auto 40px auto;
-}
+<style lang="sass" scoped>
+.content
+  width: 80%
+  margin: 15px auto 40px auto
 </style>

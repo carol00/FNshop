@@ -19,20 +19,15 @@ export default {
 }
 </script>
 
-<style scoped>
-.banner {
-    width: 100%;
-    margin: 70px 0;
-}
-
-.picContent {
-    width: 100%;
-    margin: auto;
-    max-width: 850px;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-}
+<style lang="sass" scoped>
+.banner
+  width: 100%
+  margin: 70px 0
+  .picContent
+    width: 100%
+    margin: auto
+    max-width: 850px
+    img
+      width: 100%
+      height: 100%
 </style>

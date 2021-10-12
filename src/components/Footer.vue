@@ -10,9 +10,8 @@ export default {
 }
 </script>
 
-<style scoped>
-.footer {
-  padding: 10px;
-  font-size: 10px;
-}
+<style lang="sass" scoped>
+.footer
+  padding: 10px
+  font-size: 10px
 </style>

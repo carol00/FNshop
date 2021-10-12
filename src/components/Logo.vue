@@ -11,13 +11,11 @@ export default {
 }
 </script>
 
-<style scoped>
-.logo {
-	width: 100%;
-	margin-top: 25px;
-}
-img {
-	width: 150px;
-	height: 150px;
-}
+<style lang="sass" scoped>
+.logo
+  width: 100%
+  margin-top: 25px
+  img
+    width: 150px
+    height: 150px
 </style>

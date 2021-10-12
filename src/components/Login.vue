@@ -42,38 +42,26 @@ export default {
 }
 </script>
 
-<style scoped>
-.login {
-  height: 100%;
-  display: grid;
-  align-content: center;
-}
+<style lang="sass" scoped>
+@import '../assets/style/variables.sass'
+$input-border-radius: 5px
 
-form {
-  display: grid;
-  margin: 15px auto;
-  width: 40%;
-}
-
-input {
-  margin-bottom: -1px;
-}
-
-form > input:first-child {
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
-
-form > input:last-of-type {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-button {
-  margin-top: 15px;
-}
-
-button:hover {
-  background: #4f7fab;
-}
+.login
+  height: 100%
+  display: grid
+  align-content: center
+  form
+    display: grid
+    margin: 15px auto
+    width: 40%
+    > input:first-child
+      @include shape-border-radius($input-border-radius, $input-border-radius, 0, 0)
+    > input:last-of-type
+      @include shape-border-radius(0, 0, $input-border-radius, $input-border-radius)
+    input
+      margin-bottom: -1px
+    button
+      margin-top: 15px
+      &:hover
+        background: #4f7fab
 </style>

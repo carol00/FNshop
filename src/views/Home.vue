@@ -50,8 +50,7 @@ export default {
 }
 </script>
 
-<style scoped>
-.home {
-  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+<style lang="sass" scoped>
+.home
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif
 </style>

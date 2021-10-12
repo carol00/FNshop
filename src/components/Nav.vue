@@ -31,38 +31,31 @@ export default {
 }
 </script>
 
-<style scoped>
-.nav {
-  width: 100%;
-  height: 35px;
-  padding: 7px 17px;
-  border-bottom: 1px #ece6e6 solid;
-}
-
-ul {
-  text-align: right;
-  color: #848383;
-  font-size: 12px;
-}
-
-li {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-}
-
-.amount {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  background: #cc6241;
-  border-radius: 50%;
-  border: 1px #FFF solid;
-  top: -6px;
-  right: -9px;
-  font-size: 12px;
-  color: #FFF;
-  text-align: center;
-}
+<style lang="sass" scoped>
+.nav
+  width: 100%
+  height: 35px
+  padding: 7px 17px
+  border-bottom: 1px #ece6e6 solid
+  ul
+    text-align: right
+    color: #848383
+    font-size: 12px
+    li
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      position: relative
+    .amount
+      width: 18px
+      height: 18px
+      position: absolute
+      background: #cc6241
+      border-radius: 50%
+      border: 1px #FFF solid
+      top: -6px
+      right: -9px
+      font-size: 12px
+      color: #FFF
+      text-align: center
 </style>

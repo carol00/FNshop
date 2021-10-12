@@ -25,61 +25,46 @@ export default {
 }
 </script>
 
-<style scoped>
-.search {
-  width: 100%;
-  margin: 0 5px;
-}
-
-/* select */
-select {
-  border: 2px solid var(--searchBorderColor);
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  height: 35px;
-  padding: 0 3px;
-  font-size: 14px;
-}
-
-/* input */
-.searchInput {
-  position: relative;
-  flex: 0 60%;
-  max-width: 350px;
-}
-
-.searchInput input {
-  width: 100%;
-  height: 35px;
-  border: 2px solid var(--searchBorderColor);
-  /* border-top-left-radius: 100px; */
-  /* border-bottom-left-radius: 100px; */
-  padding: 0 8px 0 10px;
-  border-inline-start-style: none;
-  border-inline-end-style: none;
-}
-
-.searchInput svg {
-  position: absolute;
-  right: 7px;
-  top: 9px;
-  color: #cecbcb;
-  font-size: 15px;
-}
-
-/* btn */
-.searchBtn button {
-  width: 45px;
-  height: 35px;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  background: var(--searchBorderColor);
-  color: #FFF;
-  border: 2px solid var(--searchBorderColor);
-  font-size: 18px;
-}
-
-.searchBtn svg {
-  margin-right: 3px;
-}
+<style lang="sass" scoped>
+.search
+  width: 100%
+  margin: 0 5px
+  select
+    border: 2px solid var(--searchBorderColor)
+    border-top-left-radius: 100px
+    border-bottom-left-radius: 100px
+    height: 35px
+    padding: 0 3px
+    font-size: 14px
+  .searchInput
+    position: relative
+    flex: 0 60%
+    max-width: 350px
+    input
+      width: 100%
+      height: 35px
+      border: 2px solid var(--searchBorderColor)
+      /* border-top-left-radius: 100px; */
+      /* border-bottom-left-radius: 100px; */
+      padding: 0 8px 0 10px
+      border-inline-start-style: none
+      border-inline-end-style: none
+    svg
+      position: absolute
+      right: 7px
+      top: 9px
+      color: #cecbcb
+      font-size: 15px
+  .searchBtn
+    button
+      width: 45px
+      height: 35px
+      border-top-right-radius: 100px
+      border-bottom-right-radius: 100px
+      background: var(--searchBorderColor)
+      color: #FFF
+      border: 2px solid var(--searchBorderColor)
+      font-size: 18px
+    svg
+      margin-right: 3px
 </style>

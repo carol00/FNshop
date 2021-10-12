@@ -41,39 +41,26 @@ export default {
 }
 </script>
 
-<style scoped>
-.product {
-  width: 170px;
-  margin: 10px 10px 25px 10px;
-}
-
-.pic img {
-  width: 100%;
-}
-
-.name {
-  text-align: left;
-  font-size: 15px;
-}
-
-/* price */
-
-.priceBox, .priceBox > div {
-  display: flex;
-  align-items: center;
-}
-
-
-.price {
-  text-decoration: line-through;
-  font-size: 15px;
-  color: #848181;
-}
-
-.discount {
-  font-size: 18px;
-  color: #cc6464;
-  font-weight: 700;
-  margin-left: 10px;
-}
+<style lang="sass" scoped>
+.product
+  width: 170px
+  margin: 10px 10px 25px 10px
+  .pic img
+    width: 100%
+  .name
+    text-align: left
+    font-size: 15px
+  /* price */
+  .priceBox, .priceBox > div
+    display: flex
+    align-items: center
+    .price
+      text-decoration: line-through
+      font-size: 15px
+      color: #848181
+    .discount
+      font-size: 18px
+      color: #cc6464
+      font-weight: 700
+      margin-left: 10px
 </style>
