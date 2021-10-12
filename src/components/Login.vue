@@ -3,7 +3,7 @@
     <h2>Please sign in</h2>
     <form>
       <input type="email" placeholder="Email address" v-model="user.username" required autofocus>
-      <input type="password" placeholder="Password" v-model="user.password" required>
+      <input type="password" placeholder="Password" v-model="user.password" required autocomplete="off">
       <button type="submit" class="btn" @click="login">Sign in</button>
     </form>
   </div>
