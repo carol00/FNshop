@@ -1,20 +1,31 @@
 <template>
   <div class="nav">
     <ul v-for="value in item" :key="value">
-      <li><i :class="value.icon"></i><p class="amount">12</p></li>
+      <!-- <li><i :class="value.icon"></i><p class="amount">12</p></li> -->
+      <li @click="logout"><i :class="value.icon"></i><p class="">{{value.name}}</p></li>
     </ul>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 
 export default {
   name: 'Nav',
   data() {
     return {
       item: [
-        { name: '購物車', icon: 'fas fa-shopping-cart' }
+        // { name: '購物車', icon: 'fas fa-shopping-cart' },
+        { name: '登出', icon: '' }
       ]
+    }
+  },
+  methods: {
+    logout() {
+      console.log('logout')
+      axios.post(`${process.env.VUE_APP_APIPATCH}/logout`).then((res) => {
+        if (res.data.success) this.$router.push('/login');
+      });
     }
   }
 }
@@ -31,7 +42,7 @@ export default {
 ul {
   text-align: right;
   color: #848383;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 li {
